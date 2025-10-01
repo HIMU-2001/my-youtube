@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 import { ThumbsUp, Share2, Download, MoreHorizontal } from "lucide-react";
-import { CHANNEL_LOGO } from "../utils/constant";
+import { CHANNEL_LOGO, YOUTUBE_VIDEO_API } from "../utils/constant";
 import CommentsContainer, { CommentList, commet } from "./CommentsContainer";
 import LiveChat from "./LiveChat";
 
@@ -22,7 +22,7 @@ const WatchPage = () => {
 
   const getVideoDetails = async () => {
     const data = await fetch(
-      "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=" +
+      YOUTUBE_VIDEO_API +
         videoId +
         "&key=" +
         process.env.REACT_APP_YOUTUBE_API_KEY
