@@ -8,6 +8,8 @@ export const YOUTUBE_API =
 export const YOUTUBE_VIDEO_API =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=";
 
+export const YOUTUBE_SEARCH_API =
+  "https://youtube.googleapis.com/youtube/v3/search?";
 export const CHANNEL_LOGO =
   "https://images-platform.99static.com//jvtXzkRQ7zM5DMQN9cNFaTy4fAo=/155x142:655x642/fit-in/500x500/99designs-contests-attachments/80/80823/attachment_80823213";
 
